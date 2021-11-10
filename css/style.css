@@ -178,6 +178,56 @@ header .right ul li a.button {
 	border-radius: 10px;
 }
 
+#home {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+#home .left {
+	width: 50%;
+	background-color: #f8f8fa;
+	padding: 125px 75px;
+}
+#home .left span {
+	font-weight: 600;
+	font-size: 14px;
+}
+#home .left h1 {
+	font-family: 'gorditabold';
+	margin-top: 15px;
+	font-size: 48px;
+	color: #000;
+	font-weight: 700;
+	max-width: 270px;
+	line-height: 1.2;
+}
+#home .left p {
+	margin-top: 30px;
+	font-weight: 600;
+	font-size: 14px;
+	max-width: 280px;
+}
+#home .left a.button {
+	display: inline-block;
+	margin-top: 35px;
+	background: linear-gradient(to right, #E45F83, #9D5BFF);
+	padding: 15px 35px;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 10px;
+}
+#home .right {
+	width: 50%;
+}
+#home .right img {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+
 @media all and (max-width: 1280px) {
 	header .middle ul li {
 		margin-right: 40px;
