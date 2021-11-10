@@ -1,0 +1,88 @@
+.wrapper
+    header
+        div.left
+            h1>a>img
+        nav.middle
+            ul>li*4>a
+        nav.right
+            ul
+                li
+                    a
+                li
+                    a.button
+    #home
+        div.left
+            span
+            h1
+            p
+            a.button
+        div.right
+            img
+    #about
+        div.top
+            h1
+            p
+        div.bottom
+            ul>li*3
+                div.img
+                    img
+                div.content
+                    h3
+                    p
+    #features
+        div.top
+            div.left
+                img
+            div.right
+                h1
+                p
+                div.button*2
+                    img
+                    span
+        div.bottom
+            div.left
+                h1
+                p
+                a.button
+            div.right
+                img
+    #pricing
+        div.top
+            h1
+            p
+        div.bottom
+            form
+                input[email]
+                input[submit]
+    footer
+        div.top
+            div.item large
+                h1>a>img
+                p
+                div.icon_panel
+                    div.icon*3
+                        img
+            div.item
+                h5
+                ul>li*5
+            div.item
+                h5
+                ul>li*3
+            div.item
+                h5
+                ul>li*2
+        div.bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
