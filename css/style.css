@@ -31,6 +31,7 @@ input,textarea,select{
 }
 a{
 	color: #888398;
+	opacity: .6;
 }
 p{
 	line-height:1.6em;
@@ -94,12 +95,13 @@ header .middle ul li {
 	margin-right: 50px;
 }
 header .middle ul li a {
+	font-weight: 600;
 	margin-right: 50px;
 	display: inline-block;
 	margin: 0 auto;
 }
 header .middle ul li:hover a {
-	font-weight: 600;
+	font-weight: 700;
 	color: #000;
 }
 header .middle ul li:hover a::after {
@@ -133,7 +135,6 @@ header .middle ul li:hover a::after {
 }
 header .middle ul li:last-child a {
 	margin-right: 0;
-	font-size: 16px;
 }
 header .right {
 
@@ -149,9 +150,10 @@ header .right ul li {
 header .right ul li a {
 	display: inline-block;
 	margin: 0 auto;
+	font-weight: 600;
 }
 header .right ul li:hover a {
-	font-weight: 600;
+	font-weight: 700;
 	color: #000;
 }
 header .right ul li:first-child:hover a::after {
@@ -168,13 +170,48 @@ header .right ul li:first-child:hover a::after {
 }
 header .right ul li a.button {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 30px;
 	padding: 15px 25px;
 	background: linear-gradient(to bottom right, #E45F83, #9D5BFF);
 	color: #fff;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 10px;
 }
 
-
-
+@media all and (max-width: 1280px) {
+	header .middle ul li {
+		margin-right: 40px;
+	}
+	header .right ul li a.button {
+		margin-left: 25px;
+		padding: 14px 22px;
+	}
+}
+@media all and (max-width: 980px) {
+	header .right {
+		display: none;
+	}
+}
+@media all and (max-width: 768px) {
+	
+}
+@media all and (max-width: 640px) {
+	header .middle ul li {
+		margin-right: 15px;
+		font-size: 14px;
+	}
+}
+@media all and (max-width: 480px) {
+	header {
+		justify-content: center;
+	}
+	header .middle {
+		display: none;
+	}
+}
+@media all and (max-width: 360px) {
+	
+}
+@media all and (max-width: 320px) {
+	
+}
