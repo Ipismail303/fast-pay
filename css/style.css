@@ -19,7 +19,7 @@ del {
 }
 body {
 	font-family: 'gorditaregular', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	color: #888398;
 	overflow-x: hidden;
 	min-width: 320px;
@@ -32,10 +32,11 @@ input,textarea,select{
 a{
 	color: #888398;
 	opacity: .6;
+	font-size: 14px;
 }
 p{
 	line-height:1.6em;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'gorditaregular', Arial;
 	font-weight: 500;
 }
@@ -133,7 +134,7 @@ header .middle ul li:hover a::after {
 		width: 65%;
     }
 }
-header .middle ul li:last-child a {
+header .middle ul li:last-child {
 	margin-right: 0;
 }
 header .right {
@@ -186,7 +187,7 @@ header .right ul li a.button {
 #home .left {
 	width: 50%;
 	background-color: #f8f8fa;
-	padding: 125px 75px;
+	padding: 150px 75px 0;
 }
 #home .left span {
 	font-weight: 600;
@@ -204,14 +205,14 @@ header .right ul li a.button {
 #home .left p {
 	margin-top: 30px;
 	font-weight: 600;
-	font-size: 14px;
-	max-width: 280px;
+	font-size: 16px;
+	max-width: 320px;
 }
 #home .left a.button {
 	display: inline-block;
 	margin-top: 35px;
 	background: linear-gradient(to right, #E45F83, #9D5BFF);
-	padding: 15px 35px;
+	padding: 20px 50px;
 	color: #fff;
 	font-weight: 700;
 	border-radius: 10px;
@@ -224,11 +225,10 @@ header .right ul li a.button {
 	width: 100%;
 }
 
-
-
-
-
 @media all and (max-width: 1280px) {
+	
+}
+@media all and (max-width: 1024px) {
 	header .middle ul li {
 		margin-right: 40px;
 	}
@@ -236,14 +236,54 @@ header .right ul li a.button {
 		margin-left: 25px;
 		padding: 14px 22px;
 	}
+	#home .left {
+		padding: 60px 75px 0;
+	}
 }
 @media all and (max-width: 980px) {
-	header .right {
-		display: none;
+	#home .left {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 60px 75px;
+	}
+	#home .left {
+		padding: 0 65px;
+	}
+	#home .left h1 {
+		font-size: 38px;
+	}
+	#home .left p {
+		font-size: 14px;
+		margin-top: 15px;
+	}
+	#home .left a.button {
+		padding: 15px 35px;
+		margin-top: 20px;
 	}
 }
 @media all and (max-width: 768px) {
-	
+	header .right {
+		display: none;
+	}
+	#home .right {
+		display: none;
+	}
+	#home .left {
+		width: 100%;
+		padding: 35px 30px;
+		display: block;
+		text-align: center;
+	}
+	#home .left h1 {
+		font-size: 48px;
+		margin: 0 auto;
+	}
+	#home .left p {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
 }
 @media all and (max-width: 640px) {
 	header .middle ul li {
@@ -253,15 +293,32 @@ header .right ul li a.button {
 }
 @media all and (max-width: 480px) {
 	header {
-		justify-content: center;
+		justify-content: center;        
 	}
 	header .middle {
 		display: none;
 	}
+	#home .left h1 {
+		font-size: 42px;
+	}
 }
 @media all and (max-width: 360px) {
-	
+	header {
+		padding: 20px 0;
+	}
+	#home .left h1 {
+		font-size: 40px;
+	}
+	#home .left p {
+		margin-top: 20px;
+	}
+	#home .left {
+		width: 100%;
+		padding: 35px 20px;
+		display: block;
+		text-align: center;
+	}
 }
 @media all and (max-width: 320px) {
-	
+ 	
 }
