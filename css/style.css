@@ -35,7 +35,7 @@ a{
 	font-size: 14px;
 }
 p{
-	line-height:1.6em;
+	line-height:1.9em;
 	font-size: 14px;
 	font-family: 'gorditaregular', Arial;
 	font-weight: 500;
@@ -185,7 +185,7 @@ header .right ul li a.button {
 	margin-bottom: 30px;
 }
 #home .left {
-	width: 50%;
+	width: calc(50% - 50px);
 	background-color: #f8f8fa;
 	padding: 150px 75px 0;
 }
@@ -218,12 +218,80 @@ header .right ul li a.button {
 	border-radius: 10px;
 }
 #home .right {
-	width: 50%;
+	width: calc(50% + 50px);
 }
 #home .right img {
 	display: block;
 	width: 100%;
 }
+
+
+#about {
+	padding: 90px 0;
+}
+#about .top {
+	
+}
+#about .top h1 {
+	font-size: 38px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#about .top p {
+	text-align: center;
+	max-width: 370px;
+	margin: 0 auto;
+	font-weight: 600;
+}
+#about .bottom {
+	margin-top: 40px;
+}
+#about .bottom ul {
+	background-image: url(../images/how\ it\ work\ -\ path.svg);
+	background-repeat: no-repeat;
+	background-position: 75px 54px;
+	background-size: 840px;
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+#about .bottom ul li {
+	width: 33.333%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#about .bottom ul li .image_container {
+	overflow: hidden;
+	height: 270px;
+}
+#about .bottom ul li img {
+	display: block;
+	width: 100%;
+}
+#about .bottom ul li:last-child img {
+	margin: 0 auto;
+}
+#about .bottom ul li .content {
+	padding: 0 105px 0 65px;
+}
+#about .bottom ul li:last-child .content {
+	padding-right: 25px;
+}
+#about .bottom ul li .content h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+}
+#about .bottom ul li .content p {
+	font-weight: 600;
+}
+
+
+
 
 @media all and (max-width: 1280px) {
 	
