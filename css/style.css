@@ -709,9 +709,6 @@ footer .top .large ul li:hover {
 	background: #F3E4DE;
 	transition: all 0.3s ease-in-out;
 }
-footer .top .large ul li:hover a img {
-	-webkit-filter: grayscale(0) invert(0);
-}
 footer .top .large ul li:last-child {
 	margin-right: 0;
 }
