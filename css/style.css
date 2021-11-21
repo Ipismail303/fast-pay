@@ -126,6 +126,7 @@ header .middle ul li a {
 header .middle ul li:hover a {
 	font-weight: 700;
 	color: #000;
+	transition: all .3s ease-in-out;
 }
 header .middle ul li:hover a::after {
 	border-bottom: 2px solid #E45F83;
@@ -802,6 +803,9 @@ footer .bottom p a {
 	/* complete .item */
 }
 @media all and (max-width: 980px) {
+	.wrapper {
+		padding-bottom: 40px;
+	}
 	#home .left {
 		display: flex;
 		flex-direction: column;
@@ -896,6 +900,9 @@ footer .bottom p a {
 	}
 }
 @media all and (max-width: 768px) {
+	.wrapper {
+		padding-bottom: 30px;
+	}
 	header .right {
 		display: none;
 	}
@@ -1060,7 +1067,7 @@ footer .bottom p a {
 		flex-wrap: wrap;
 	}
 	footer .top .item {
-		width: 45%;
+		width: 50%;
 	}
 	footer .top .large {
 		width: 100%;
@@ -1223,6 +1230,12 @@ footer .bottom p a {
 	}
 	footer .top .item:last-child {
 		text-align: center;
+	}
+	footer .top .item h5 {
+		margin-bottom: 10px;
+	}
+	footer .top .item ul li {
+		margin-bottom: 5px;
 	}
 }
 @media all and (max-width: 320px) {
